@@ -3,18 +3,18 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial scale=1.0, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="#">
+<link rel="icon" href="">
 <title>Bootstrap Portfolio - Arfin</title>
 </head>
 
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">AT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,49 +24,78 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
           </ul>
-          <span class="navbar-text">
-            Navbar text with an inline element
+          <span class="navbar-weblinks">
+            <a href="https://www.linkedin.com/in/arfint/" alt="Linkedin" target="_blank" class="navbar-icons" id="nav-linkedin">
+              <span class="fa-brands fa-linkedin-in fa-xl"></span>
+            </a>
+            <a href="https://github.com/Arfinxx" alt="GitHub" target="_blank" class="navbar-icons" id="nav-github">
+              <span class="fa-brands fa-github fa-xl"></span>
+            </a>
+            <a href="mailto:Arfin.Tajammal@hotmail.com" alt="email" target="_blank" class="navbar-icons" id="nav-email">
+              <span class="fa-solid fa-envelope fa-xl"></span>
+            </a>
+            <a href="images/Arfin Tajammal CV.pdf" alt="Arfin Tajammal CV" target="_blank" download class="navbar-icons" id="nav-cv">
+              <span class="fa-solid fa-file fa-xl"></span>
+            </a>
           </span>
         </div>
       </nav>
 <!-- Navbar END -->
 
 <!-- Hero Section -->
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Arfin Tajammal.</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+<header class="hero-banner">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container row">
+        <div class="col col-lg-8 col-sm-12" id="hero-text">
+            <h1 class="display-4">Arfin Tajammal.</h1>
+            <p class="lead">Welcome to my Web Portfolio! _</p>
+            <hr class="my-4">
+            <p>This webpage showcases my recent web-development projects and my skills.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#work" role="button">Recent Projects</a>
+                <a class="btn btn-secondary btn-lg" href="https://github.com/Arfinxx" role="button">My GitHub</a>
+
+            </p>
+        </div>
+
+        <!-- Personal image -->
+        <div class="col-lg-1"></div>
+        <div class="col col-lg-3 col-sm-12" id="hero-img">
+            <img style="max-width:100%;"src="images/hero-portrait.png" alt="hero-image">
+        </div>
       </div>
   </div>
+</header>
 <!-- Hero Section END -->
 
-<!-- Work Section -->
-<section class="container-fluid" id="work">
-    <h1>My Work.</h1>
+<!-- My Projects Section -->
+<section class="container-fluid text-center" id="projects">
+    <h1>My Projects.</h1>
     <div class="line-element"></div>
 
-    <div class="container" id="work_grid">
-        <div class="row">
-    <!-- Row 1 Card 1 -->
+    <div class="container" id="projects_grid">
+
+        <div class="row card-deck">
+
+            <!-- Row 1 Card 1 -->
             <div class="col-lg-12">
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="images/02-portfolio.png" alt="Arfin Portfolio">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <small class="text-muted" style="display:block; padding-bottom:1%;">HTML | CSS</small>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">My First Portfolio</h5>
+                    <p class="card-text">This was my first attempt at creating a Portfolio webpage using what I had learnt so far in the bootcamp.</p>
+                    <small class="text-muted" style="display:block; padding-bottom:2%;">HTML | CSS</small>
+                    <a href="https://arfinxx.github.io/Arfin-Portfolio/" target="_blank" class="btn btn-primary">Webpage</a>
+                    <a href="https://github.com/Arfinxx/Arfin-Portfolio.git" target="_blank" class="btn btn-secondary">GitHub Repo</a>
                     </div>
                     </div>
             </div>
@@ -75,44 +104,52 @@
         </div>
 
         <div class="row card-deck">
-    <!-- Row 2 Card 1 -->
-    <div class="col-lg-4 col-sm-12">
-        <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            </div>
-    </div>
-    <!-- Row 2 Card 1 END-->
 
-    <!-- Row 2 Card 2 -->
-    <div class="col-lg-4 col-sm-12">
-        <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- Row 2 Card 1 -->
+            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+                <div class="card ">
+                  <div class="card-body">
+                    <h5 class="card-title">Horiseon Accessibility</h5>
+                    <p class="card-text">In this project the HTML and CSS files for a Marketing company were reworked to follow accessibility standards
+                      and help with Search-engine optimisation</p>
+                      <small class="text-muted" style="display:block; padding-bottom:2%;">HTML | CSS</small>
+                      <a href="https://arfinxx.github.io/Horiseon-accessibility-improvement" target="_blank" class="btn btn-primary">Webpage</a>
+                      <a href="https://github.com/Arfinxx/Horiseon-accessibility-improvement" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                  </div>
+                    <img class="card-img-bottom" src="images/01-horiseon.jpg" alt="Horiseon accessibility improvement">
+                </div>
             </div>
-            </div>
-    </div>
-    <!-- Row 2 Card 2 END-->
+             <!-- Row 2 Card 1 END-->
 
-    <!-- Row 2 Card 3 -->
-    <div class="col-lg-4 col-sm-12">
-        <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- Row 2 Card 2 -->
+            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+                <div class="card ">
+                  <div class="card-body">
+                    <h5 class="card-title">Coming soon</h5>
+                    <p class="card-text">New projects coming soon.</p>
+                    <small class="text-muted" style="display:block; padding-bottom:2%;"></small>
+                    <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
+                    <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
+                  </div>
+                    <img class="card-img-bottom" src="..." alt="Card image cap">
+                </div>
             </div>
+             <!-- Row 2 Card 2 END-->
+
+            <!-- Row 2 Card 3 -->
+            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+                <div class="card ">
+                  <div class="card-body">
+                    <h5 class="card-title">Coming soon</h5>
+                    <p class="card-text">New projects coming soon.</p>
+                    <small class="text-muted" style="display:block; padding-bottom:2%;"></small>
+                    <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
+                    <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
+                  </div>
+                    <img class="card-img-bottom" src="..." alt="Card image cap">
+                </div>
             </div>
-    </div>
-    <!-- Row 2 Card 3 END-->
+             <!-- Row 2 Card 3 END-->
         </div>
     </div>
 <!-- Insert next row/cards here -->
@@ -121,49 +158,259 @@
 <!-- Work Section END -->
 
 <!-- Skills Section -->
-<section class="container-fluid" id="skills">
+<section class="container-fluid text-center" id="skills">
     <h1>My Skills.</h1>
     <div class="line-element"></div>
+    <p class="lead">Here are some of the skills and programs I have developed an understanding for so far.
+       I hope to grow this skill set over the course of the bootcamp as well as outside of it!</p>
 
     <div class="container" id="skills-icons">
-        <!-- GitLab Icon -->
+      
+      <!-- GitHub Icon -->
+      <div class="icon-card">
+        <div class="icon" id="github">
 
-        <!-- GitLab Icon END -->
+          <div class="icon-border">
+            <span class="fa-brands fa-square-github fa-6x"></span>
+          </div>
 
-          <!-- HTML Icon -->
+          <div class="icon-caption">
+            <div>
+              <h5>GitHub</h5>
+              <small>Use of GitHub and maintaining repositories to a professional standard. </small>
+            </div>
+          </div>
 
-        <!-- HTML Icon END -->
+        </div>
 
-        <!-- CSS Icon -->
+      </div>
+      <!-- GitHub Icon END -->
 
-        <!-- CSS Icon END -->
+      <!-- GitLab Icon -->
+      <div class="icon-card">
+        <div class="icon" id="gitlab">
+
+          <div class="icon-border">
+            <span class="fa-brands fa-square-gitlab fa-6x"></span>
+          </div>
+
+          <div class="icon-caption">
+            <div>
+              <h5>GitLab</h5>
+              <small>Taking pulls from GitLab.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- GitLab Icon END -->
+
+      <!-- HTML Icon -->
+      <div class="icon-card">
+        <div class="icon" id="html5">
+
+          <div class="icon-border">
+            <span class="fa-brands fa-html5 fa-6x"></span>
+          </div>
+
+          <div class="icon-caption">
+            <div>
+              <h5>HTML5</h5>
+              <small>Use of HTML to create webpage content/structure.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- HTML Icon END -->
+
+      <!-- CSS Icon -->
+      <div class="icon-card">
+        <div class="icon" id="css">
+
+          <div class="icon-border">
+            <span class="fa-brands fa-css3-alt fa-6x"></span>
+          </div>
+
+          <div class="icon-caption">
+            <div>
+              <h5>CSS 3</h5>
+              <small>Use of CSS in stylesheets to give HTML webpages styling.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- CSS Icon END -->
+
+      <!-- Bootstrap Icon -->
+      <div class="icon-card">
+        <div class="icon" id="bootstrap">
+
+          <div class="icon-border">
+            <span class="fa-brands fa-bootstrap fa-6x"></span>
+          </div>
+
+          <div class="icon-caption">
+            <div>
+              <h5>Bootstrap</h5>
+              <small>Use and modification of the Bootstrap library and documentation to create professional webpage components.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Bootstrap Icon END -->
+
+      <!-- More Icon -->
+      <div class="icon-card">
+        <div class="icon" id="more">
+      
+          <div class="icon-border">
+            <span class="fa-solid fa-circle-chevron-down fa-5x"></span>
+          </div>
+      
+          <div class="icon-caption">
+            <div>
+              <h5>More to come</h5>
+              <small>As I learn more skills from the Bootcamp they will be listed here.</small>
+            </div>
+          </div>
+      
+        </div>
+      
+      </div>
+      <!-- More Icon END -->
+
     </div>
 
 </section>
 <!-- Skills Section END -->
 
 <!-- About/Contact Section -->
-<section class="container-fluid" id="about">
+<section class="container-fluid text-center" id="about">
     <h1>About Me.</h1>
     <div class="line-element"></div>
-    <p class="lead">EXAMPLE TEXT FOR THE ABOUT ME SECTION</p>
+    <p class="lead">My name is Arfin and I am an aspiring web-developer. I graduated with a BSc in Mathematical Physics
+       and spent over 2 years as a Professional Driving Instructor. The unique skill set I grew through my work and education
+      has provided the drive and passion to deepen my knowledge of coding and web-development. To see the other technical experience
+       I have taken initiative over, please review my CV below. </p>
+    
+            <a href="images/Arfin Tajammal CV.pdf" alt="Arfin Tajammal CV" target="_blank" download class="btn btn-primary btn-lg" role="button">
+              Arfin Tajammal CV</a>
 </section>
-<hr class="my-2">
-<section class="container-fluid" id="contact">
+
+<section class="container" id="contact">
+    <hr class="my-2">
     <h2>Contact details.</h2>
     <div class="line-element-thin"></div>
+
+
 </section>
 <!-- About/Contact Section END -->
 
+<div class="container" id="contact-icons">
+      
+  <!-- Phone Icon -->
+  <div class="icon-card">
+    <div class="icon" id="phone">
+
+      <div class="icon-border">
+        <span class="fa-solid fa-square-phone fa-4x"></span>
+      </div>
+
+      <div class="icon-caption">
+        <div>
+          <h5>Phone</h5>
+          <small>+44 7488 250378</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Phone Icon END -->
+
+    <!-- Email Icon -->
+    <div class="icon-card">
+      <div class="icon" id="email">
+  
+        <div class="icon-border">
+          <span class="fa-solid fa-square-envelope fa-4x"></span>
+        </div>
+  
+        <div class="icon-caption">
+          <div>
+            
+           <a href="mailto:Arfin.Tajammal@hotmail.com" alt="Email">
+            <h5>Professional Email</h5>
+            <small>Arfin.Tajammal@hotmail.com</small>
+          </a>
+
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- Phone Icon END -->
+
+    <!-- LinkedIn Icon -->
+    <div class="icon-card">
+      <div class="icon" id="linkedin">
+  
+        <div class="icon-border">
+          <span class="fa-brands fa-linkedin fa-4x"></span>
+        </div>
+  
+        <div class="icon-caption">
+          <div>
+            
+           <a href="https://www.linkedin.com/in/arfint/" alt="LinkedIn">
+            <h5>LinkedIn</h5>
+            <small>@ArfinT</small>
+          </a>
+
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- Phone Icon END -->
+
+</div>
 <!-- Footer -->
 <Footer class="container-fluid" id="footer">
+  
+  <div class="row">
+  
+    <nav class="footer-nav col-lg-12">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+
+    <div class="footer-text col-lg-12 text-center text-muted">
+      <p class="lead">Made by Arfin Tajammal</p>
+      <small>2023</small>
+    </div>
+  </div>
 </footer>
 <!-- Footer END -->
 
 
 
 
+
  <!-- Optional JavaScript -->
+
+ <script src="https://kit.fontawesome.com/bbd1d234aa.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
