@@ -1,0 +1,98 @@
+/* Global properties */
+
+*{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+
+h1{
+    font-family: Comfortaa;
+}
+
+:root{
+    --color-dark: #3f5a4c;
+    --color-light: #D5DCDC;
+    --accent-dark: #3A887C;
+    --accent-light: #C0C49B;
+}
+
+/* NavBar properties */
+
+.bg-dark{
+    background-color: var(--color-dark) !important;
+}
+
+.navbar-brand{
+    font-family: Smythe;
+    font-size: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1%;
+    padding-right: 1%
+}
+.nav-link{
+    color: var(--color-light) !important;
+}
+
+.navbar-weblinks a{
+    color: var(--accent-light);
+    padding-inline: 10px;
+    
+}
+
+/* To align weblink icons on navbar */
+@media only screen and (max-width: 992px){
+    .navbar-weblinks {
+        display:flex;
+        justify-content: space-around;
+        padding-top: 2%;
+    }
+}
+
+/* Hero Banner Properties */
+
+#hero-video{    
+position:absolute;
+object-fit: cover;
+min-width: 100%; 
+min-height: 100%;
+height:auto;
+right:0;
+bottom:0;
+width:100%;
+}
+
+.jumbotron{
+    height: 100vh;
+    align-items: stretch;
+}
+
+.jumbotron .container{
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(7px);
+    border-radius: 50px;
+    width:70%;
+    height:fit-content;
+    margin: auto;
+    align-items: center;
+    padding-top:0px;
+
+}
+
+#hero-text h1{
+    font-weight:bold;
+    font-stretch:expanded;
+    font-size: 5rem;
+    max-width:100%;
+    color: var(--color-light);
+    overflow: overlay;
+}
+
+#hero-text .last-name{
+    font-weight:200;
+}
+
+#hero-text .lead{
+    font-weight: 400;
+}
