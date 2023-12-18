@@ -92,8 +92,9 @@
                     <img class="card-img-top" src="images/02-portfolio.png" alt="Arfin Portfolio">
                   <div class="card-body">
                     <h5 class="card-title">My First Portfolio</h5>
-                    <p class="card-text">This was my first attempt at creating a Portfolio webpage using what I had learnt so far in the bootcamp.</p>
-                    <small class="text-muted" style="display:block; padding-bottom:2%;">HTML | CSS</small>
+                    <p class="card-text">This was my first attempt at creating a Portfolio webpage using what I had learnt so far in the bootcamp.
+                       I also made use of media queries to resize webpage elements depending on the size of the viewport.</p>
+                    <small class="text-muted card-lang" style="display:block; padding-bottom:1.5%;">HTML | CSS</small>
                     <a href="https://arfinxx.github.io/Arfin-Portfolio/" target="_blank" class="btn btn-primary">Webpage</a>
                     <a href="https://github.com/Arfinxx/Arfin-Portfolio.git" target="_blank" class="btn btn-secondary">GitHub Repo</a>
                     </div>
@@ -111,8 +112,8 @@
                   <div class="card-body">
                     <h5 class="card-title">Horiseon Accessibility</h5>
                     <p class="card-text">In this project the HTML and CSS files for a Marketing company were reworked to follow accessibility standards
-                      and help with Search-engine optimisation</p>
-                      <small class="text-muted" style="display:block; padding-bottom:2%;">HTML | CSS</small>
+                      and help with Search-engine optimisation.</p>
+                      <small class="text-muted card-lang" style="display:block; padding-bottom:6%;">HTML | CSS</small>
                       <a href="https://arfinxx.github.io/Horiseon-accessibility-improvement" target="_blank" class="btn btn-primary">Webpage</a>
                       <a href="https://github.com/Arfinxx/Horiseon-accessibility-improvement" target="_blank" class="btn btn-secondary">GitHub Repo</a>
                   </div>
@@ -127,7 +128,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Coming soon</h5>
                     <p class="card-text">New projects coming soon.</p>
-                    <small class="text-muted" style="display:block; padding-bottom:2%;"></small>
+                    <small class="text-muted card-lang" style="display:block; padding-bottom:2%;"></small>
                     <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
                     <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
                   </div>
@@ -142,7 +143,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Coming soon</h5>
                     <p class="card-text">New projects coming soon.</p>
-                    <small class="text-muted" style="display:block; padding-bottom:2%;"></small>
+                    <small class="text-muted card-lang" style="display:block; padding-bottom:2%;"></small>
                     <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
                     <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
                   </div>
@@ -304,14 +305,10 @@
               Arfin Tajammal CV</a>
 </section>
 
-<section class="container" id="contact">
+<section class="container text-center" id="contact">
     <hr class="my-2">
     <h2>Contact details.</h2>
     <div class="line-element-thin"></div>
-
-
-</section>
-<!-- About/Contact Section END -->
 
 <div class="container" id="contact-icons">
       
@@ -325,8 +322,10 @@
 
       <div class="icon-caption">
         <div>
-          <h5>Phone</h5>
-          <small>+44 7488 250378</small>
+          <a href="tel:+447488250378" alt="phone number: 07488250378">
+            <h5>Phone</h5>
+            <small>+44 7488 250378</small>
+          </a>
         </div>
       </div>
 
@@ -384,12 +383,16 @@
     <!-- Phone Icon END -->
 
 </div>
+</section>
+<!-- About/Contact Section END -->
+
+
 <!-- Footer -->
 <Footer class="container-fluid" id="footer">
   
   <div class="row">
   
-    <nav class="footer-nav col-lg-12">
+    <nav class="nav nav-pills nav-fill text-center">
       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="#projects">Projects</a>
       <a class="nav-link" href="#skills">Skills</a>
