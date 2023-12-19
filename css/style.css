@@ -80,6 +80,10 @@ a:hover {
     
 }
 
+.navbar-weblinks a:hover{
+    color: var(--accent-dark);
+}
+
 .dropdown-menu {
     background-color: var(--color-light);
     color: var(--color-dark);
