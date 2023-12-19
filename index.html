@@ -32,8 +32,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About/Contact
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#about">About</a>
+                <a class="dropdown-item" href="#contact">Contact</a>
+                </div>
             </li>
           </ul>
           <span class="navbar-weblinks">
@@ -138,7 +144,7 @@
                     <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
                     <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
                   </div>
-                    <img class="card-img-bottom" src="..." alt="Card image cap">
+                    <img class="card-img-bottom" src="images/coming soon.svg" alt="Card image cap">
                 </div>
             </div>
              <!-- Row 2 Card 2 END-->
@@ -153,7 +159,7 @@
                     <a href="#" target="_blank" class="btn btn-primary disabled">Webpage</a>
                     <a href="#" target="_blank" class="btn btn-secondary disabled">GitHub Repo</a>
                   </div>
-                    <img class="card-img-bottom" src="..." alt="Card image cap">
+                    <img class="card-img-bottom" src="images/coming soon.svg" alt="Card image cap">
                 </div>
             </div>
              <!-- Row 2 Card 3 END-->
@@ -301,6 +307,7 @@
 <!-- About/Contact Section -->
 <section class="about-contact">
   <div class="container-fluid text-center" id="about">
+   <div class="flex-container">
     <h1>About Me.</h1>
     <div class="line-element"></div>
     <p class="lead">My name is Arfin and I am an aspiring web-developer. I graduated with a BSc in Mathematical Physics
@@ -311,12 +318,11 @@
             <a href="images/Arfin Tajammal CV.pdf" alt="Arfin Tajammal CV" target="_blank" download class="btn btn-primary btn-lg" role="button">
               Arfin Tajammal CV</a>
             </div>
-
-  <div class="container text-center" id="contact">
+    </div>
+  
+<div class="container text-center" id="contact">
     <hr class="my-2">
     <h2>Contact details.</h2>
-    <div class="line-element-thin"></div>
-
 <div class="container" id="contact-icons">
       
   <!-- Phone Icon -->
@@ -397,21 +403,19 @@
 
 <!-- Footer -->
 <Footer class="container-fluid" id="footer">
-  
-  <div class="row">
-  
-    <nav class="nav nav-pills nav-fill text-center">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#about">About</a>
+    
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#skills">Skills</a>
+      <a class="nav-item nav-link" href="#about">About</a>
     </nav>
 
     <div class="footer-text col-lg-12 text-center text-muted">
       <p class="lead">Made by Arfin Tajammal</p>
       <small>2023</small>
     </div>
-  </div>
+
 </footer>
 <!-- Footer END -->
 
