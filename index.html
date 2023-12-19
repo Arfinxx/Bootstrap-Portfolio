@@ -60,23 +60,23 @@
     <video autoplay muted loop id="hero-video">
       <source src="images/abstract-3d-lines-with-hd.mp4" type="video/mp4">
     </video>
-    <div class="container row">
+    <div class="container row align-items-center">
         <div class="col col-lg-8 col-sm-12" id="hero-text">
             <h1 class="display-4">Arfin <span class="last-name">Tajammal.</span></h1>
-            <p class="lead">Welcome to my Web Portfolio! _</p>
+            <p class="lead hero-subtitle">Welcome to my Web Portfolio! _</p>
             <hr class="my-4">
-            <p>This webpage showcases my recent web-development projects and my skills.</p>
+            <p class="hero-subtitle2">This webpage showcases my recent web-development projects and skills.</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#work" role="button">Recent Projects</a>
-                <a class="btn btn-secondary btn-lg" href="https://github.com/Arfinxx" role="button">My GitHub</a>
+                <a class="btn btn-outline-primary btn-lg" href="#work" role="button">Recent Projects</a>
+                <a class="btn btn-outline-secondary btn-lg" href="https://github.com/Arfinxx" role="button">My GitHub</a>
 
             </p>
         </div>
 
         <!-- Personal image -->
-        <div class="col-lg-1"></div>
+        <div class="col-lg-1 col-sm-0" id="hero-gap"></div>
         <div class="col col-lg-3 col-sm-12" id="hero-img">
-            <img style="max-width:100%;"src="images/hero-portrait.png" alt="hero-image">
+            <img src="images/hero-portrait.png" alt="hero-image">
         </div>
       </div>
   </div>
@@ -93,7 +93,7 @@
         <div class="row card-deck">
 
             <!-- Row 1 Card 1 -->
-            <div class="col-lg-12">
+            <div class="col col-lg-12 col-sm-12">
                 <div class="card">
                     <img class="card-img-top" src="images/02-portfolio.png" alt="Arfin Portfolio">
                   <div class="card-body">
@@ -105,15 +105,15 @@
                     <a href="https://github.com/Arfinxx/Arfin-Portfolio.git" target="_blank" class="btn btn-secondary">GitHub Repo</a>
                     </div>
                     </div>
-            </div>
+            <!-- </div> -->
           
     <!-- Row 1 Card 1 END-->
         </div>
 
-        <div class="row card-deck">
+        <!-- <div class="row card-deck"> -->
 
             <!-- Row 2 Card 1 -->
-            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+            <div class="col col-lg-4 col-sm-12 d-flex align-items-stretch">
                 <div class="card ">
                   <div class="card-body">
                     <h5 class="card-title">Horiseon Accessibility</h5>
@@ -129,7 +129,7 @@
              <!-- Row 2 Card 1 END-->
 
             <!-- Row 2 Card 2 -->
-            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+            <div class="col col-lg-4 col-sm-12 d-flex align-items-stretch">
                 <div class="card ">
                   <div class="card-body">
                     <h5 class="card-title">Coming soon</h5>
@@ -144,7 +144,7 @@
              <!-- Row 2 Card 2 END-->
 
             <!-- Row 2 Card 3 -->
-            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+            <div class="col col-lg-4 col-sm-12 d-flex align-items-stretch">
                 <div class="card ">
                   <div class="card-body">
                     <h5 class="card-title">Coming soon</h5>
@@ -299,7 +299,8 @@
 <!-- Skills Section END -->
 
 <!-- About/Contact Section -->
-<section class="container-fluid text-center" id="about">
+<section class="about-contact">
+  <div class="container-fluid text-center" id="about">
     <h1>About Me.</h1>
     <div class="line-element"></div>
     <p class="lead">My name is Arfin and I am an aspiring web-developer. I graduated with a BSc in Mathematical Physics
@@ -309,9 +310,9 @@
     
             <a href="images/Arfin Tajammal CV.pdf" alt="Arfin Tajammal CV" target="_blank" download class="btn btn-primary btn-lg" role="button">
               Arfin Tajammal CV</a>
-</section>
+            </div>
 
-<section class="container text-center" id="contact">
+  <div class="container text-center" id="contact">
     <hr class="my-2">
     <h2>Contact details.</h2>
     <div class="line-element-thin"></div>
@@ -389,6 +390,7 @@
     <!-- Phone Icon END -->
 
 </div>
+  </div>
 </section>
 <!-- About/Contact Section END -->
 
