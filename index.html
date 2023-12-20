@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -320,9 +320,10 @@
               Arfin Tajammal CV</a>
             </div>
     </div>
-  
-<div class="container text-center" id="contact">
-    <hr class="my-2">
+  <hr class="my-2">
+
+  <div class="container text-center" id="contact">
+    
     <h2>Contact details.</h2>
 <div class="container" id="contact-icons">
       
@@ -405,12 +406,25 @@
 <!-- Footer -->
 <Footer class="container-fluid" id="footer">
     
-    <nav class="nav nav-pills nav-justified">
-      <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#projects">Projects</a>
-      <a class="nav-item nav-link" href="#skills">Skills</a>
-      <a class="nav-item nav-link" href="#about">About</a>
-    </nav>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#skills">Skills</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#about-contact" role="button" aria-haspopup="true" aria-expanded="false">
+        About/Contact</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#about">About</a>
+        <a class="dropdown-item" href="#contact">Contact</a>
+      </div>
+    </li>
+  </ul>
 
     <div class="footer-text col-lg-12 text-center text-muted">
       <p class="lead">Made by Arfin Tajammal</p>
